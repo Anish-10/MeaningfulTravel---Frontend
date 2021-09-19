@@ -1,9 +1,14 @@
-import React, { Component } from 'react'
+import React, { Component, run } from 'react'
 import Header from "../Header/Header"
 import Footer from "../Footer/Footer"
+import {Link} from 'react-router-dom'
 
 class BookHotels extends Component
 {
+    run = (e) =>
+    {
+        window.location.href="/cab_booking"
+    }
     render()
     {
         return(
@@ -41,7 +46,24 @@ class BookHotels extends Component
                                         <br/>
                                         <p><em><b>Adults:</b></em>2 <em><b>Childern:</b></em>2</p>
                                         <p><em><b>Price:</b></em> Rs.5550</p>
-                                            <button class="btn btn--radius btn--green" type="submit">Book Now</button>
+                                            <button class="btn btn--radius btn--green" type="submit" data-toggle="modal" data-target="#BookNow">Book Now</button>
+
+                                            <div class="modal fade" id="BookNow" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                    <div class="modal-body">
+                                                    <h4>Booking Successfull.</h4>
+                                                    <br/>
+                                                    <Link to="/cab_booking"><button class="btn btn--radius btn--green" type="submit" onClick={this.run}>Book a Cab Now</button></Link>
+                                                    </div>
+                                                    <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -75,7 +97,24 @@ class BookHotels extends Component
                                         <br/>
                                         <p><em><b>Adults:</b></em>2 <em><b>Childern:</b></em>2</p>
                                         <p><em><b>Price:</b></em> Rs.7000</p>
-                                            <button class="btn btn--radius btn--green" type="submit">Book Now</button>
+                                        <button class="btn btn--radius btn--green" type="submit" data-toggle="modal" data-target="#BookNow2">Book Now</button>
+
+                                        <div class="modal fade" id="BookNow2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <h4>Booking Successfull.</h4>
+                                                    <br/>
+                                                    <Link to="/cab_booking"><button class="btn btn--radius btn--green" type="submit" >Book a Cab Now</button></Link>
+                                                </div>
+                                                <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

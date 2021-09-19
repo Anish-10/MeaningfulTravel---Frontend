@@ -36,7 +36,7 @@ class Header extends Component
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/profile">
+                    <a class="nav-link" href="/user_profile">
                     Profile
                     </a>
                 </li>
