@@ -66,7 +66,7 @@ class Login extends Component
                                         <input class="input--style-2" type="password" placeholder="Password" name="Password" value={this.state.Password} onChange={(event)=>{this.setState({Password:event.target.value})}}></input>
                                     </div>
                                     <div class="p-t-30">
-                                        <button class="btn btn--radius btn--green" type="submit" data-toggle="modal" data-target="#loginModal" onClick={this.userLogin}>Sign In</button>
+                                        <Link to="/home"><button class="btn btn--radius btn--green" type="submit" data-toggle="modal" data-target="#loginModal" onClick={this.userLogin}>Sign In</button></Link>
 
                                         <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div class="modal-dialog" role="document">

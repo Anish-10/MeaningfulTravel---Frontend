@@ -105,7 +105,7 @@ class BookHotels extends Component
                                                 <div class="modal-body">
                                                     <h4>Booking Successfull.</h4>
                                                     <br/>
-                                                    <Link to="/cab_booking"><button class="btn btn--radius btn--green" type="submit" >Book a Cab Now</button></Link>
+                                                    <Link to="/cab_booking"><button class="btn btn--radius btn--green" type="submit" onClick={this.run}>Book a Cab Now</button></Link>
                                                 </div>
                                                 <div class="modal-header">
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -147,7 +147,7 @@ class BookHotels extends Component
                                         <br/>
                                         <p><em><b>Adults:</b></em>2 <em><b>Childern:</b></em>2</p>
                                         <p><em><b>Price:</b></em> Rs.5550</p>
-                                            <button class="btn btn--radius btn--green" type="submit">Book Now</button>
+                                            <button class="btn btn--radius btn--green" type="submit" onClick={this.run}>Book Now</button>
                                     </div>
                                 </div>
                             </div>

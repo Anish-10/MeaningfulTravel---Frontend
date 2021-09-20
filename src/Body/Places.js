@@ -16,7 +16,7 @@ class Places extends Component
                         <h2 style={{color:"white", textAlign:"center", backgroundColor:"#0997DC", position:"relative"}}>Places to Visit in Kathmandu</h2><br/>
                         <div class="row">
                             <div class="col-sm-4">
-                                <Link to="/home"><div class="card">
+                                <Link to="/places-info1"><div class="card">
                                     <div class="card-body">
                                         <img src={process.env.PUBLIC_URL + 'Images/p1.jpg'} style={{width:"100%", height:"200px"}}></img>
                                         <h4 style={{color:"white", textAlign:"center", backgroundColor:"#00D9D9", paddingTop:"5px"}}>ChandraGiri Temple</h4>
